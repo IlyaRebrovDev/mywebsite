@@ -1,0 +1,160 @@
+.main {
+    display: grid;
+    grid-area: main;
+    background-color: #333;
+    height: 1300px;
+}
+
+.FirstText {
+    display: grid;
+    grid-template-columns:1fr minmax(250px,1000px) 1fr;
+    grid-template-rows: 100px;
+}
+
+.FirstText div {
+    position: relative;
+    top: 195px;
+    padding: 8px 15px;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-family: Cambria;
+/*border-bottom: 1px solid grey;*/
+
+}
+
+.FirstText div:nth-child(odd) {
+    background-color:#333;
+}
+/*-----------------------------------------*/
+
+.Name {
+    display: grid;
+    grid-template-columns:1fr minmax(250px,1000px) 1fr;
+    grid-template-rows: 100px;
+
+}
+
+.Name div {
+    position: relative;
+    top:-100px;
+    padding: 8px 15px;
+    color: #00FFBB;
+    font-size: 60px;
+    font-family: "Arial Black";
+
+}
+
+.Name div:nth-child(odd) {
+    background-color:#333;
+}
+/*-----------------------------------------*/
+
+.Professison {
+    display: grid;
+    grid-template-columns:1fr minmax(250px,1000px) 1fr;
+    grid-template-rows: 100px;
+
+}
+
+.Professison div {
+    position: relative;
+    top:-335px;
+    padding: 8px 15px;
+    color: #F55353;
+    font-size: 30px;
+    font-family: "Arial Black";
+
+}
+
+.Professison div:nth-child(odd) {
+    background-color:#333;
+}
+/*-----------------------------------------*/
+
+.Skills {
+    display: grid;
+    grid-template-columns:1fr minmax(250px,1000px) 1fr;
+    grid-template-rows: 100px;
+
+}
+
+.Skills div {
+    position: relative;
+    top:-600px;
+    padding: 8px 15px;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: "Arial Black";
+
+}
+
+.Skills div:nth-child(odd) {
+    background-color:#333;
+}
+
+
+@media (max-width: 610px) {
+    .FirstText div {
+        position: relative;
+        top: 100px;
+        padding: 8px 15px;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-family: Cambria;
+
+    }
+    .Name div {
+        position: relative;
+        top:-200px;
+        padding: 8px 15px;
+        color: #00FFBB;
+        font-size: 25px;
+        font-family: Cambria;
+
+    }
+    .Professison div {
+        position: relative;
+        top:-480px;
+        padding: 8px 15px;
+        color: #F55353;
+        font-size: 12px;
+        font-family: "Arial Black";
+
+    }
+    .Skills div {
+        position: relative;
+        top:-775px;
+        padding: 8px 15px;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-family: "Arial Black";
+
+    }
+
+}
+
+
+
+.preloader{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height:1205px;
+    z-index: 10;
+    transition: 1s all;
+    opacity: 1;
+    visibility: visible;
+    background: #222;
+    /*background: linear-gradient(45deg,#F9C3BCFF,#CCB8F5FF);*/
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+
+}
+
+
+.done{
+    opacity: 0;
+    visibility: hidden;
+}

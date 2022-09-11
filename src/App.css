@@ -1,0 +1,23 @@
+.App-wrapper {
+    display: grid;
+    margin: 0;
+    width: 100%;
+
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+@media (min-width: 640px) {
+    .App-wrapper {
+        display: grid;
+        margin: 0;
+        width: 100%;
+
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+}

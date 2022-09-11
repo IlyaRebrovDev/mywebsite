@@ -1,0 +1,81 @@
+.footer {
+    display: grid;
+    grid-area: footer;
+    background-color: #222222;
+    height: 100px;
+}
+
+.grid {
+    display: grid;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    grid-template-columns:1fr 60px minmax(10px, auto) minmax(100px, 450px) minmax(10px, auto) 60px 1fr;
+    grid-template-areas:". one . text . two.";
+    grid-gap: 10px;
+
+}
+
+.link1 {
+    display: grid;
+    height: 60px;
+    grid-area: one;
+    position: relative;
+    top: 20px;
+    border-radius: 30px;
+    opacity: 1;
+    background: url("Instagram.png");
+    background-size: cover;
+
+}
+
+.link1:hover {
+    opacity: .5;
+
+}
+
+.Text {
+    display: grid;
+    height: 60px;
+    grid-area: text;
+    position: relative;
+    top: 20px;
+    color: #7C7C7DFF;
+    text-align: center;
+
+
+}
+
+.link2 {
+    display: grid;
+    height: 60px;
+    grid-area: two;
+    position: relative;
+    top: 20px;
+    border-radius: 30px;
+    opacity: 1;
+    background: url("LinkedIn.png");
+    background-size: cover;
+}
+.link2:hover {
+    opacity: .5;
+
+}
+
+
+
+
+@media (max-width: 350px) {
+    .Text {
+        display: grid;
+        height: 60px;
+        grid-area: text;
+        position: relative;
+        top: 20px;
+        color: #7C7C7DFF;
+        text-align: center;
+        font-size: small;
+
+
+    }
+}

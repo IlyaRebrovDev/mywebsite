@@ -1,0 +1,120 @@
+.main {
+    display: grid;
+    grid-area: main;
+    background-color: #333;
+    height: 1300px;
+}
+
+.content {
+    display: grid;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    grid-template-columns: 1fr minmax(200px, 500px) 50px 300px minmax(15px, 1fr);
+    grid-template-areas:".text . image.";
+}
+
+
+.Text {
+    position: relative;
+    top: 200px;
+    display: grid;
+    grid-area: text;
+    height: 350px;
+
+    padding: 8px 15px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-family: "Arial Black";
+}
+
+.Image {
+    position: relative;
+    top: 100px;
+    display: grid;
+    grid-area: image;
+    height: 400px;
+    background:url("Photo.jpg");
+    background-size: cover;
+}
+
+.grid {
+    display: grid;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    grid-template-columns: 1fr minmax(200px, 500px) 350px  1fr;
+    grid-template-areas:".maintext..";
+}
+
+.maintext {
+    position: relative;
+    top: -700px;
+    grid-area: maintext;
+    height: 50px;
+
+    padding: 8px 15px;
+    color: #00FFBB;
+    font-size: 35px;
+    font-family: Cambria;
+}
+
+
+
+
+@media (max-width: 800px) {
+    .content {
+        display: grid;
+        margin: 0;
+        width: 100%;
+        position: relative;
+        grid-template-columns:1fr minmax(300px, 300px) 1fr;
+        grid-template-areas:".text."
+                            ".image.";
+    }
+
+    .Text {
+        position: relative;
+        top: 150px;
+        display: grid;
+        grid-area: text;
+        height: 350px;
+        text-align: center;
+        padding: 8px 15px;
+        color: #FFFFFF;
+        font-size: 10px;
+        font-family: "Arial Black";
+    }
+
+    .Image {
+        position: relative;
+        top: -100px;
+        display: grid;
+        grid-area: image;
+        height: 400px;
+        background:url("Photo.jpg");
+        background-size: cover;
+    }
+
+    .grid {
+        display: grid;
+        margin: 0;
+        width: 100%;
+        position: relative;
+        grid-template-columns: 1fr minmax(200px, 500px) 1fr;
+        grid-template-areas:".maintext.";
+    }
+
+    .maintext {
+        position: relative;
+        top: -900px;
+        grid-area: maintext;
+        height: 50px;
+        text-align: center;
+        padding: 8px 15px;
+        color: #00FFBB;
+        font-size: 25px;
+        font-family: Cambria;
+    }
+
+}
